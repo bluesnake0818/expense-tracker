@@ -18,6 +18,7 @@ export default ExpensesSummary
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: 20,
     padding: 8,
     backgroundColor: GlobalStyles.colors.primary50,
     borderRadius: 6, 
