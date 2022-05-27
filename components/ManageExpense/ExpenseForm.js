@@ -3,12 +3,13 @@ import { View, Text, StyleSheet } from 'react-native'
 
 import Input from './Input'
 import Button from '../UI/Button'
+import { getFortmattedDate } from '../../util/date'
 
-const ExpenseForm = ( { submitButtonLabel, onCancel, onSubmit } ) => {
+const ExpenseForm = ( { submitButtonLabel, onCancel, onSubmit, defaultValues } ) => {
   const [inputValues, setInputValues] = useState({
-    amount: '',
-    date: '',
-    description: '',
+    amount: defaultValues ? defaultValues.amount.toString() : '',
+    date: defaultValues ? getFortmattedDate(defaultValues.date) : '',
+    description: defaultValues ? defaultValues.description : '',
   })
 
 
