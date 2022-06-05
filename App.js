@@ -81,7 +81,7 @@ export default function App() {
             <Stack.Screen 
               name="ManageExpense" 
               component={ManageExpense} 
-              optoins={{
+              options={{
                 presentation: 'modal',
               }}  
             />
